@@ -3,11 +3,7 @@ package com.geonhee.portfolio.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class Link(
-        name: String,
-        content: String,
-        isActive: Boolean
-) : BaseEntity() {
+class Link(name: String, content: String, isActive: Boolean) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
