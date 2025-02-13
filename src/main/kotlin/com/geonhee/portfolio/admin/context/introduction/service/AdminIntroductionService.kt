@@ -1,10 +1,11 @@
 package com.geonhee.portfolio.admin.context.introduction.service
 
+import com.geonhee.portfolio.admin.context.introduction.form.IntroductionForm
 import com.geonhee.portfolio.admin.data.TableDTO
-import com.geonhee.portfolio.domain.entity.Achievement
 import com.geonhee.portfolio.domain.entity.Introduction
 import com.geonhee.portfolio.domain.repository.IntroductionRepository
 import org.springframework.stereotype.Service
+import org.springframework.transaction.annotation.Transactional
 
 @Service
 class AdminIntroductionService(
@@ -18,4 +19,15 @@ class AdminIntroductionService(
         return TableDTO.from(classInfo, entities)
     }
 
+    @Transactional
+    fun save(form: IntroductionForm) {
+        val introduction = form.toEntity()
+        introductionRepository.save(introduction)
+    }
+
+    @Transactional
+    fun update(id: Long, form: IntroductionForm) {
+        val introduction = form.toEntity(id)
+        introductionRepository.save(introduction)
+    }
 }
