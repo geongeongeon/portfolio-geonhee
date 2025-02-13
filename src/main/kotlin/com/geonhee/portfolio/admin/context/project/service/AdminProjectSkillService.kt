@@ -1,4 +1,4 @@
-package com.geonhee.portfolio.admin.context.projcet.service
+package com.geonhee.portfolio.admin.context.project.service
 
 import com.geonhee.portfolio.admin.data.TableDTO
 import com.geonhee.portfolio.domain.repository.ProjectRepository

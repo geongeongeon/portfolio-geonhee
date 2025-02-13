@@ -1,6 +1,6 @@
-package com.geonhee.portfolio.admin.context.projcet.controller
+package com.geonhee.portfolio.admin.context.project.controller
 
-import com.geonhee.portfolio.admin.context.projcet.service.AdminProjectService
+import com.geonhee.portfolio.admin.context.project.service.AdminProjectService
 import com.geonhee.portfolio.admin.data.FormElementDTO
 import com.geonhee.portfolio.admin.data.SelectFormElementDTO
 import com.geonhee.portfolio.admin.data.TextFormElementDTO

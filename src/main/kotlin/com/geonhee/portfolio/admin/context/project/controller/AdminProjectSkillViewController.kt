@@ -1,6 +1,6 @@
-package com.geonhee.portfolio.admin.context.projcet.controller
+package com.geonhee.portfolio.admin.context.project.controller
 
-import com.geonhee.portfolio.admin.context.projcet.service.AdminProjectSkillService
+import com.geonhee.portfolio.admin.context.project.service.AdminProjectSkillService
 import com.geonhee.portfolio.admin.data.FormElementDTO
 import com.geonhee.portfolio.admin.data.SelectFormElementDTO
 import org.springframework.stereotype.Controller
