@@ -8,7 +8,7 @@ class ProjectDTO(
     val startYearMonth: String,
     val endYearMonth: String?,
     val details: List<ProjectDetailDTO>,
-    val skill: List<SkillDTO>?
+    val skills: List<SkillDTO>?
 ) {
     constructor(project: Project) : this(
         name = project.name,
@@ -16,6 +16,6 @@ class ProjectDTO(
         startYearMonth = "${project.startYear}.${project.startMonth}",
         endYearMonth = project.getEndYearMonth(),
         details = project.details.filter { it.isActive }.map { ProjectDetailDTO(it) },
-        skill = project.skills.map { it.skill }.filter { it.isActive }.map { SkillDTO(it) }
+        skills = project.skills.map { it.skill }.filter { it.isActive }.map { SkillDTO(it) }
     )
 }
