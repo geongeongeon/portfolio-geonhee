@@ -25,7 +25,6 @@ class AdminAchievementViewController(
             TextFormElementDTO("host", 5),
             SelectFormElementDTO("isActive", 2, listOf(true.toString(), false.toString()))
         )
-        model.addAttribute("formElements", formElements)
 
         val table = adminAchievementService.getAchievementTable()
         model.addAttribute("table", table)
