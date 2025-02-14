@@ -148,7 +148,7 @@ class DataInitializer(
 
         val account = Account(
             loginId = "admin_leegeonhee",
-            pw = BCryptPasswordEncoder().encode("990204")
+            pw = "\$2a\$10\$nAbCTGx31nNeJniUPMLWqubErkB.8jvsr5ikqtTcuuFnPqKVPKgpa"
         )
 
         accountRepository.save(account)
