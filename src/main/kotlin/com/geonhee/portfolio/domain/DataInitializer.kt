@@ -5,6 +5,7 @@ import com.geonhee.portfolio.domain.entity.*
 import com.geonhee.portfolio.domain.repository.*
 import jakarta.annotation.PostConstruct
 import org.springframework.context.annotation.Profile
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Component
 import java.time.LocalDate
 
@@ -16,7 +17,8 @@ class DataInitializer(
         private val linkRepository: LinkRepository,
         private val skillRepository: SkillRepository,
         private val projectRepository: ProjectRepository,
-        private val experienceRepository: ExperienceRepository
+        private val experienceRepository: ExperienceRepository,
+        private val accountRepository: AccountRepository
 ) {
 
     @PostConstruct
@@ -143,6 +145,13 @@ class DataInitializer(
             )
         )
         projectRepository.saveAll(mutableListOf(project1, project2))
+
+        val account = Account(
+            loginId = "admin_leegeonhee",
+            pw = BCryptPasswordEncoder().encode("990204")
+        )
+
+        accountRepository.save(account)
     }
 
 }
