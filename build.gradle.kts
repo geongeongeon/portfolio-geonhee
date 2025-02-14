@@ -8,7 +8,7 @@ plugins {
 	kotlin("plugin.jpa") version "1.8.22"
 }
 
-group = "com.yongback"
+group = "com.geonhee"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5")
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
