@@ -8,21 +8,16 @@ import org.springframework.web.servlet.ModelAndView
 
 @Component
 class AdminInterceptor : HandlerInterceptor {
-    override fun postHandle(
-        request: HttpServletRequest,
-        response: HttpServletResponse,
-        handler: Any,
-        modelAndView: ModelAndView?
-    ) {
+
+    override fun postHandle(request: HttpServletRequest, response: HttpServletResponse, handler: Any, modelAndView: ModelAndView?) {
         val menus = listOf<MenuDTO>(
             MenuDTO(
                 name = "Index",
                 pages = listOf<PageDTO>(
                     PageDTO(name = "Introduction", url = "/admin/introduction"),
-                    PageDTO(name = "link", url = "/admin/link")
+                    PageDTO(name = "Link", url = "/admin/link")
                 )
             ),
-
             MenuDTO(
                 name = "Resume",
                 pages = listOf<PageDTO>(
@@ -31,7 +26,6 @@ class AdminInterceptor : HandlerInterceptor {
                     PageDTO(name = "Skill", url = "/admin/skill")
                 )
             ),
-
             MenuDTO(
                 name = "Projects",
                 pages = listOf<PageDTO>(
@@ -42,6 +36,6 @@ class AdminInterceptor : HandlerInterceptor {
         )
 
         modelAndView?.model?.put("menus", menus)
-
     }
+
 }

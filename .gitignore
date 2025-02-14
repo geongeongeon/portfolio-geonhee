@@ -36,11 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
-### Kotlin ###
-.kotlin
-
-# Created by https://www.toptal.com/developers/gitignore/api/windows,intellij+all,kotlin,java,gradle,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,intellij+all,kotlin,java,gradle,git
+# Created by https://www.toptal.com/developers/gitignore/api/kotlin,intellij+all,git,gradle,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,intellij+all,git,gradle,macos
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -145,7 +142,7 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-### Java ###
+### Kotlin ###
 # Compiled class file
 *.class
 
@@ -171,44 +168,38 @@ fabric.properties
 hs_err_pid*
 replay_pid*
 
-### Kotlin ###
-# Compiled class file
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Log file
+# Icon must end with two \r
+Icon
 
-# BlueJ files
 
-# Mobile Tools for Java (J2ME)
+# Thumbnails
+._*
 
-# Package Files #
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### Gradle ###
 .gradle
@@ -237,4 +228,4 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,intellij+all,kotlin,java,gradle,git
+# End of https://www.toptal.com/developers/gitignore/api/kotlin,intellij+all,git,gradle,macos

@@ -1,5 +1,3 @@
-package com.geonhee.portfolio.admin.context.dashboard.controller
-
 import com.geonhee.portfolio.admin.context.dashboard.data.VisitorsDTO
 import com.geonhee.portfolio.admin.context.dashboard.service.AdminDashboardService
 import org.springframework.stereotype.Controller
